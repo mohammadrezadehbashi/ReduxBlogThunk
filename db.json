@@ -1,0 +1,48 @@
+{
+  "posts": [
+    {
+      "title": "salam",
+      "author": "niclson",
+      "content": "chetori",
+      "date": 1691916074456,
+      "reactions": {
+        "eyes": 0,
+        "heart": 0,
+        "hooray": 0,
+        "rocket": 0,
+        "thumbsUp": 0
+      },
+      "users": {
+        "id": 1
+      },
+      "id": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstName": "typicode",
+      "lastName": "niclson",
+      "postsId": 1
+    },
+    {
+      "id": 2,
+      "firstName": "delaram",
+      "lastName": "hilary",
+      "postsId": 2
+    },
+    {
+      "id": 3,
+      "firstName": "voivoi voi",
+      "lastName": "sampson",
+      "postsId": 3
+    }
+  ]
+}
