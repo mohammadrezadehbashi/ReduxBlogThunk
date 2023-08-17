@@ -11,7 +11,9 @@ function UserPage() {
     console.log('zzz',userId.id,userPosts)
 
     function accessUserPosts() {
-        const response = userPosts??[0].filter(i => i.users.id === Number(userId.id))
+        // const response = userPosts??[0].filter(i => i.users.id === Number(userId.id))
+        const response = userPosts.filter(i => i.users.id === Number(userId.id))
+
         return response
     }
     const postLinks = accessUserPosts().map(post =>

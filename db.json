@@ -16,6 +16,23 @@
         "id": 1
       },
       "id": 1
+    },
+    {
+      "title": "SALAM",
+      "author": "sampson",
+      "content": "TEST",
+      "date": 1692285814861,
+      "reactions": {
+        "eyes": 0,
+        "heart": 0,
+        "hooray": 0,
+        "rocket": 0,
+        "thumbsUp": 0
+      },
+      "users": {
+        "id": 3
+      },
+      "id": 2
     }
   ],
   "comments": [
