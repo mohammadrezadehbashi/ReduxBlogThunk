@@ -5,15 +5,9 @@ import { useEffect } from 'react';
 
 function UsersList() {
     const users=useSelector(selectUserAll)
-// useEffect(()=>{
-//     users.map((userItem)=>(
-//         <li ><Link key={userItem.id} to={`/users/${userItem.id}`}   dideo-checked="true">{userItem.firstName}</Link></li>
 
-//     )
-//         )
-// },[users])
     const user=users.map((userItem)=>(
-        <li ><Link key={userItem.id} to={`/users/${userItem.id}`}   dideo-checked="true">{userItem.firstName}</Link></li>
+        <li key={userItem.id}><Link  to={`/users/${userItem.id}`}   dideo-checked="true">{userItem.lastName}</Link></li>
 
     )
         )

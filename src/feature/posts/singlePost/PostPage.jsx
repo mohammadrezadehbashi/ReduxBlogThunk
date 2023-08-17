@@ -10,26 +10,28 @@ import PostAuthor from "../PostAuthor";
 
 function PostPage(props) {
     let postId = useParams()
-    const post = useSelector(state => selectPostById(state, postId.id))
-    // const user = useSelector(state => selectUserById(state,))
-    const dispatch = useDispatch();
 
-    useEffect(() => {
-        dispatch(fetchPostsID())
-    }, [dispatch])
+    console.log("postID",postId.id);
+
+    const post = useSelector(state => selectPostById(state, postId.id))
+
+    // const dispatch = useDispatch();
+    // useEffect(() => {
+        // dispatch(fetchPostsID())
+    // }, [dispatch])
 
     return (
         <section>
-            <article class="post">
+            <article className="post">
                 <h2>{post.title}</h2>
                 <div>
                     <PostAuthor userId={post.users?.id} />
                     <PostTimeAgo date={post.date} />
                 </div>
-                <p className="post-content">{post.content?.substring(0, 70)}</p>
+                <p className="post-content">{post.content}</p>
                 <Reactions reactions={post.reactions} postId={post.id} />
                 
-                <Link class="button" to={`/users`} dideo-checked="true">Back</Link>
+                <Link className="button" to={'/users/'} dideo-checked="true">Back</Link>
             </article>
         </section>
     );
